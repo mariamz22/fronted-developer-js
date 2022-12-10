@@ -9,6 +9,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 //Resumen de shopping-cart
 const shoppingCartIcon = document.querySelector('.navbar-shopping-cart')
 const shoppingCartResume = document.querySelector('.product-detail')
+const productDetail = document.querySelector('.product-detail-aside')
 
 //Menu Principal
 const cardsContainer = document.querySelector('.cards-container');
@@ -46,6 +47,7 @@ function renderProducts(arr){
     
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image)
+        // productImg.addEventListener('click', openProductDetail);
     
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
@@ -87,6 +89,7 @@ function showMobileMenu() {
 function showShoppingCart() {
     mobileMenu.classList.add('inactive');
     desktopMenu.classList.add('inactive');
+    productDetail.classList.add('inactive');
     shoppingCartResume.classList.toggle('inactive');
 }
 
