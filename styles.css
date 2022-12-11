@@ -336,6 +336,8 @@ nav {
     width: 340px;
     position: absolute;
     right: 0 ;
+    background-color: var(--white);
+    
 }
 
 .product-detail-close {
@@ -407,6 +409,10 @@ nav {
     justify-content: center;
 }
 
+
+.cards-container img:hover{
+cursor: pointer;
+}
 
 @media (max-width: 640px) {
 
